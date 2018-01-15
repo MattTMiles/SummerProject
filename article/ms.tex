@@ -27,12 +27,12 @@
 
 % Title of the paper, and the short title which is used in the headers.
 % Keep the title short and informative.
-\title[Research is fun, max. 45 characters]{MNRAS \LaTeXe\ template -- title goes here}
+\title[Research is fun, max. 45 characters]{You can't spell Euphoric without Eu.}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
 \author[Matthew T. Miles et al.]{
-Matthew T. Miles,$^{1}$\thanks{E-mail: mn@ras.org.uk (KTS)}
+Matthew T. Miles,$^{1}$\thanks{E-mail: mtmil3@student.monash.edu}
 A. N. Other,$^{2}$
 Third Author$^{2,3}$
 and Fourth Author$^{3}$
@@ -66,18 +66,26 @@ keyword1 -- keyword2 -- keyword3
 
 \section{Introduction}
 
-This is a simple template for authors to write new MNRAS papers.
-See \texttt{mnras\_sample.tex} for a more complex example, and \texttt{mnras\_guide.tex}
-for a full user guide.
 
-All papers should start with an Introduction section, which sets the work
-in context, cites relevant earlier studies in the field by \citet{Others2013},
-and describes the problem the authors aim to solve \citep[e.g.][]{Author2012}.
+
+Heavy elements (those with an atomic number greater than 30) must be synthesized using the slow (s) and rapid (r) neutron capture processes (\cite{Sneden2008}). The creation and abundance of these elements has been a key area in astrophysics research, and has been discussed and debated ever since the idea was first introduced in 1957 (\cite{Burbidge1957}). In the particular case of Europium (atomic number 63), almost all is produced through the r-process. The r-process occurs under very specific circumstances, where the neutron density is high enough that the rate of neutron capture will occur faster than the rate at which the element undergoes a $\beta$ decay. The sites at which this phenomena can occur are very specific, with the most favoured being early core-collapse supernovae which would have enriched gas clouds that later led to enriched star formation. Or more recently, neutron star mergers, as is theorised to have occurred in the case of the highly r-processed enhanced ultra-faint dwarf (UFD) galaxy Reticulum II (\cite{Ji2016}).
+
+The recent discovery of the UFD Reticulum II has sparked discussion about the origin of r-process elements. Historically UFD's have had some of the lowest abundance of r-process elements of any celestial body, however analysis of several of Reticulum II's stars show they are greatly enriched, to the factor of 2-3 orders of magnitude higher than stars found in any other UFD (\cite{Ji2016}). This measure of enrichment lends evidence to the theory that a single rare event (such as a neutron star merger) must have occurred in the galaxies formative years to enrich it, as (for Europium especially) the heavy element yields are found to be 1000 times higher than would be achieved from core-collapse supernovae ejecta. 
+
+While core-collapse supernovae and neutron star mergers are likely to be the progenitors of most r-process material, that is not to say that all r-process material stems from these sources. Rather it might serve as an indication of the rarity of stars found to be enhanced in these elements. 
+\\\\
+The second data release from the LAMOST telescope catalogued close to 2 million spectra (low resolution) of giant stars. Of these 2 million, 454,180 were fit against a normalised spectra from a sample of 9952 giants by Anna Ho (\cite{AnnaHo2017}), and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. 
+
+In this letter we report the probable discovery of 22 of these LAMOST giants that show enhanced r-process peaks for Europium at both 4129 and 4205 Angstroms. The giants belong to a broad range of both metallicity and temperature, and don't cluster or trend towards any particular place in the observed sky. These characteristics and seeming lack-of a trend could argue that the mechanism that created these r-process enhanced stars may be general for all similar giant stars. 
+
+
 
 \section{Methods, Observations, Simulations etc.}
-
 Normally the next section describes the techniques the authors used.
 It is frequently split into subsections, such as Section~\ref{sec:maths} below.
+
+\subsection{Observations}
+The 
 
 \subsection{Maths}
 \label{sec:maths} 
@@ -144,15 +152,19 @@ Try to keep it short.
 
 % The best way to enter references is to use BibTeX:
 
-%\bibliographystyle{mnras}
-%\bibliography{example} % if your bibtex file is called example.bib
+\bibliographystyle{mnras}
+\bibliography{paper} % if your bibtex file is called example.bib
+\begin{thebibliography}{99}
+	\bibitem[\protect\citeauthoryear{Sneden, Christopher; Cowan, John J; Gallino, Roberto}{2008}]{Sneden2008}
+	Sneden C., Cowan J.J., \& Gallino R. 2013, Annual review of Astronomy \& Astrophysics, 46, 1
+	\bibitem[\protect\citeauthoryear{Ji, Alexander P.; Frebel, Anna; Chiti, Anirudh; Simon, Joshua D.}{2016}]{Ji2016}
+	Ji A. P., Frebel A., Chiti A., \& Simon J. D. 2016, Nature, 531
+	\bibitem[\protect\citeauthoryear{Ho, Anna Y.Q; Ness, Melissa K; Hogg, David W; Rix, Hans-Walter; Liu, Chao,; Yang, Fan; Zhang, Yong; Hou Yonhui; Wang Yuefei}{2017}]{AnnaHo2017}
+	Ho A. Y. Q., Ness M. K., Hogg David W., Rix H-W., Liu C., Yang F., Zhang Y., Hou Y.,\& Wang Y. 2017, ApJ, 836, 1
+	\bibitem[\protect\citeauthoryear{Burbidge, E. Margaret; Burbidge, G.R.; Fowler, William A.; Hoyle, F}{1957}]{Burbidge1957}
+	Burbidge E. M., Burbidge G. R., Fowler W. A., \& Hoyle F. 1957, Review of Modern Physics, 29, 4
+\end{thebibliography}
 
-%\begin{thebibliography}{99}
-%\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
-%Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
-%\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
-%Others S., 2012, Journal of Interesting Stuff, 17, 198
-%\end{thebibliography}
 
 
 \appendix
