@@ -10,6 +10,9 @@
 \usepackage{ae,aecompl}
 
 
+\usepackage{booktabs}
+\usepackage{float}
+
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
@@ -45,7 +48,7 @@ $^{3}$Another Department, Different Institution, Street Address, City Postal Cod
 
 \date{Accepted XXX. Received YYY; in original form ZZZ}
 
-\pubyear{2015}
+\pubyear{2018}
 
 \begin{document}
 \label{firstpage}
@@ -53,10 +56,7 @@ $^{3}$Another Department, Different Institution, Street Address, City Postal Cod
 \maketitle
 
 \begin{abstract}
-This is a simple template for authors to write new MNRAS papers.
-The abstract should briefly describe the aims, methods, and main results of the paper.
-It should be a single paragraph not more than 250 words (200 words for Letters).
-No references should appear in the abstract.
+The creation of heavy elements occurs through the slow and rapid neutron capture process. The site of the slow neutron capture process is known and occurs commonly throughout the Milky Way, particularly in AGB stars. However the site of the rapid neutron capture process is still heavily debated. There are many sites that could potentially create the conditions needed to synthesise r-process elements, however there have arisen issues with frequency, abundance, and probability fed from observations of our celestial neighbours in the Milky Way, that prevent us from choosing any single site for this phenomena. Here we show the discovery of 22 r-process (Europium) enhanced stars, double the currently known amount in our galaxy. The discovery of these stars, and the lack of common features they possess, implies the action of multiple different r-process sites. This is opposed to all r-process material being produced in small amounts in common events such as core-collapse supernovae, or the material only being produced in very large amounts in very rare events, such as neutron star mergers. 
 \end{abstract}
 
 \begin{keywords}
@@ -66,26 +66,49 @@ keyword1 -- keyword2 -- keyword3
 
 \section{Introduction}
 
+Heavy elements (those with an atomic number greater than 30) must be synthesized using the slow (s) and rapid (r) neutron capture processes (\cite{Sneden2008}). The creation and abundance of these elements has been a key area in astrophysics research, and has been discussed and debated ever since the idea was first introduced in 1957 (\cite{Burbidge1957}). 
 
+Since it was first hypothesised 61 years ago, theorists have argued about the potential sites of the r-process. The r-process occurs under very specific circumstances, where the neutron density is high enough that the rate of neutron capture will occur faster than the rate at which the element undergoes a $\beta$-decay. The sites at which this phenomena can occur are very specific, with the most favoured being core-collapse supernovae which could enrich gas clouds that later could lead to enriched star formation. Or alternatively, where r-process elements are in a much higher abundance, Neutron Star Mergers or magnetorotationally driven supernovae, as is theorised to have happened in the case of the highly r-process enhanced ultra-faint dwarf (UFD) galaxy Reticulum II (\cite{Ji2016}). Neutron star mergers may have a stronger argument to be the parent sight of such a large amount of material being injected to a particular area, as is observed from Reticulum II. However, magnetorotationally driven supernovae are another possible solution. While they may not produce as much r-process material (although still more than core-collapse supernovae), they occur more frequently.
 
-Heavy elements (those with an atomic number greater than 30) must be synthesized using the slow (s) and rapid (r) neutron capture processes (\cite{Sneden2008}). The creation and abundance of these elements has been a key area in astrophysics research, and has been discussed and debated ever since the idea was first introduced in 1957 (\cite{Burbidge1957}). In the particular case of Europium (atomic number 63), almost all is produced through the r-process. The r-process occurs under very specific circumstances, where the neutron density is high enough that the rate of neutron capture will occur faster than the rate at which the element undergoes a $\beta$ decay. The sites at which this phenomena can occur are very specific, with the most favoured being early core-collapse supernovae which would have enriched gas clouds that later led to enriched star formation. Or more recently, neutron star mergers, as is theorised to have occurred in the case of the highly r-processed enhanced ultra-faint dwarf (UFD) galaxy Reticulum II (\cite{Ji2016}).
+In the particular case of Europium (atomic number 63), almost all is produced through the r-process [citation needed]. The recent discovery of the UFD Reticulum II has sparked discussion about the origin of r-process elements. Historically UFD's have had some of the lowest abundance of r-process elements of any celestial body, however analysis of several of Reticulum II's stars show they are greatly enriched, to the factor of 2-3 orders of magnitude higher than stars found in any other UFD (\cite{Ji2016}). This measure of enrichment lends evidence to the theory that a single rare event must have occurred in the galaxies formative years to enrich it, as (for Europium especially) the heavy element yields are found to be 1000 times higher than would be achieved from core-collapse supernovae ejecta. As the idea that 1000 supernovae could have contributed to Reticulum II is extremely improbable, then the fact that Reticulum II is so heavily enriched is evidence that at least some r-process material must be produced by a rare astrophysical event such as a neutron star-neutron star merger, or a magnetorotationally driven supernovae.
 
-The recent discovery of the UFD Reticulum II has sparked discussion about the origin of r-process elements. Historically UFD's have had some of the lowest abundance of r-process elements of any celestial body, however analysis of several of Reticulum II's stars show they are greatly enriched, to the factor of 2-3 orders of magnitude higher than stars found in any other UFD (\cite{Ji2016}). This measure of enrichment lends evidence to the theory that a single rare event (such as a neutron star merger) must have occurred in the galaxies formative years to enrich it, as (for Europium especially) the heavy element yields are found to be 1000 times higher than would be achieved from core-collapse supernovae ejecta. 
+While neutron star mergers or magnetorotationally driven supernovae are likely to be the progenitors of much r-process material, that is not to say that all r-process material stems from these sources. Rather ithe rarity of these events might serve as an indication of the rarity of stars found to be heavily enhanced in these elements. What we then have to ask is can these rare events be responsible for all r-process stars found in the Milky Way, regardless of the relative strength of their abundance? And if not, can we then conclude that there must be multiple sites of r-process element creation throughout the Milky Way, that create these elements to different extents?
 
-While core-collapse supernovae and neutron star mergers are likely to be the progenitors of most r-process material, that is not to say that all r-process material stems from these sources. Rather it might serve as an indication of the rarity of stars found to be enhanced in these elements. 
+To answer this question it is necessary to find and catalogue more r-process stars to find some relative fraction of enhanced stars that are either very enhanced, and so must come from a rare event. Or only slightly enhanced, and so they may come from a more common event that produces less material. However, r-process stars are unfortunately very rare, which makes finding this fraction difficult. For this reason we look to massive data sets, such as the LAMOST sky survey.
 \\\\
-The second data release from the LAMOST telescope catalogued close to 2 million spectra (low resolution) of giant stars. Of these 2 million, 454,180 were fit against a normalised spectra from a sample of 9952 giants by Anna Ho (\cite{AnnaHo2017}), and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. 
+The second data release from the LAMOST telescope catalogued $\approx$ 2.2 million spectra (low resolution) of stars in the Northern sky. Of these 2.2 million, 454,180 giants were fit against a normalised spectra from a sample of 9952 giants by Anna Ho (\cite{AnnaHo2017}), and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. 
 
-In this letter we report the probable discovery of 22 of these LAMOST giants that show enhanced r-process peaks for Europium at both 4129 and 4205 Angstroms. The giants belong to a broad range of both metallicity and temperature, and don't cluster or trend towards any particular place in the observed sky. These characteristics and seeming lack-of a trend could argue that the mechanism that created these r-process enhanced stars may be general for all similar giant stars. 
+In this letter we report the probable discovery of 22 of these LAMOST giants that show enhanced r-process peaks for Europium at both 4129 and 4205 Angstroms. The giants belong to a broad range of both metallicity and temperature, and don't cluster or trend towards any particular place in the observed sky. These characteristics and seeming lack-of a trend could argue that there must be multiple sights of the r-process. While rare events such as neutron star mergers may create r-process elements in a very high abundance in localised areas, it is improbable to assume that these rare events occur commonly enough across the observed sky to explain what we see here. We suggest instead that there exists another r-process site that is acting alongside neutron star mergers that is far more common, but produces far less r-process material, such as core-collapse supernovae.
 
+
+\begin{figure}
+	\includegraphics[width=\columnwidth]{423451}
+	\caption{The spectral region around two Europium absorption lines at 4129 and 4205 Angstroms. This particular stars spectra (black) shows clear absorption at these wavelengths, as compared to the normalised spectra of a similar star (red).}
+	\label{fig:starindex_423451}
+\end{figure}
 
 
 \section{Methods, Observations, Simulations etc.}
 Normally the next section describes the techniques the authors used.
 It is frequently split into subsections, such as Section~\ref{sec:maths} below.
 
-\subsection{Observations}
-The 
+\subsection{Observations and Target Selection}
+The LAMOST survey is a low resolution ($R\approx1800$) optical survey that took spectra of stars between (3650-9000 \AA). The LAMOST Data-Release 2 (DR2) collected spectra in this band for $\approx$ 2.2 million stars. Anna Ho describes in her 2017 paper (\cite{AnnaHo2017}) how she used a machine learning method named \textit{The Cannon}. \textit{The Cannon} fit a predictive model using 9952 LAMOST stars that were also found in the higher resolution ($R\approx22500$) APOGEE survey. From this Ho was able to fit normalised spectra to 454180 giants from the LAMOST survey and was restricted to between 3905 and 9000 \AA.
+
+We located potential candidate stars with an abundance of Europium by searching for deviations from the normalized spectra supplied by \textit{The Cannon}. A negative deviation implied an enhancement in a particular element while a positive deviation implied a depletion (compared to what the model expected). 
+
+At the two main absorption lines for Europium (4129 and 4205 \AA) we fitted Gaussian profiles to each star in the 454180 giants from LAMOST DR2, and we recorded the amplitude and the wavelength of each, as well as their corresponding errors. The relevant stars were then found by meeting a specific set of criteria: 
+
+\begin{itemize}
+	\item The amplitude of their deviation from the model needed to be less than -0.05 (remembering that a negative deviation corresponds to an enhancement in the element);
+	\item The Signal to Noise (S/N) must have been greater than 30;
+	\item The deviation from the required wavelength in question must have been less than 2 \AA;
+	\item The $\chi^{2}$ value (where the $\chi^{2}$ value represents how well the rest of the model fit the spectrum, aside from the enhancement points) must have been less 3, and;
+	\item All of these conditions must have been met for both 4129 and 4205 \AA for us to consider them sufficiently Eu enhanced.
+\end{itemize}   
+
+This left us with an initial sample of 48 candidates out of the 454180 LAMOST giant sample. They were then visually scrutinised to find any that were clear outliers and did not belong in the sample. After this process we were left with 22 potentially r-process enhanced candidates.
+
 
 \subsection{Maths}
 \label{sec:maths} 
@@ -108,6 +131,14 @@ worry about the exact layout, which will be handled by the publishers.
 
 Figures are referred to as e.g. Fig.~\ref{fig:example_figure}, and tables as
 e.g. Table~\ref{tab:example_table}.
+
+\begin{figure}
+	\includegraphics[width=\columnwidth]{RA_v_dec_radial_velocity}
+	\caption{The right ascension and declination for the enhanced stars, coloured by radial velocity. No clear trend or significant grouping is present.}
+	\label{fig:radec_Eucands}
+\end{figure}
+
+
 
 \begin{figure}
 	% To include a figure from a file named example.*
@@ -159,7 +190,7 @@ Try to keep it short.
 	Sneden C., Cowan J.J., \& Gallino R. 2013, Annual review of Astronomy \& Astrophysics, 46, 1
 	\bibitem[\protect\citeauthoryear{Ji, Alexander P.; Frebel, Anna; Chiti, Anirudh; Simon, Joshua D.}{2016}]{Ji2016}
 	Ji A. P., Frebel A., Chiti A., \& Simon J. D. 2016, Nature, 531
-	\bibitem[\protect\citeauthoryear{Ho, Anna Y.Q; Ness, Melissa K; Hogg, David W; Rix, Hans-Walter; Liu, Chao,; Yang, Fan; Zhang, Yong; Hou Yonhui; Wang Yuefei}{2017}]{AnnaHo2017}
+	\bibitem[\protect\citeauthoryear{Ho et al.}{2017}]{AnnaHo2017}
 	Ho A. Y. Q., Ness M. K., Hogg David W., Rix H-W., Liu C., Yang F., Zhang Y., Hou Y.,\& Wang Y. 2017, ApJ, 836, 1
 	\bibitem[\protect\citeauthoryear{Burbidge, E. Margaret; Burbidge, G.R.; Fowler, William A.; Hoyle, F}{1957}]{Burbidge1957}
 	Burbidge E. M., Burbidge G. R., Fowler W. A., \& Hoyle F. 1957, Review of Modern Physics, 29, 4
@@ -168,13 +199,50 @@ Try to keep it short.
 
 
 \appendix
-
+\newpage
 \section{Some extra material}
 
 If you want to present additional material which would interrupt the flow of the main paper,
 it can be placed in an Appendix which appears after the list of references.
 
+\begin{table}
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}llllllllllllll@{}}
+			\toprule
+			\textbf{2MASS ID} & \textbf{RA} & \textbf{DEC} & \textbf{S/N} & \textbf{\begin{tabular}[c]{@{}l@{}}Vr\\ (km/s)\end{tabular}} & \textbf{Teff} & \textbf{Logg} & \textbf{{[}Fe/H{]}} & \textbf{{[}$\alpha$/Fe{]}} & \textbf{$\chi^{2}$} & \textbf{\begin{tabular}[c]{@{}l@{}}{[}Eu/Fe{]}\\ at 4129\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}{[}Eu/Fe{]}\\ at 4129 error\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}{[}Eu/Fe{]}\\ at 4205\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}{[}Eu/Fe{]}\\ at 4205 error\end{tabular}} \\ \midrule
+			J063400.95+420904.3 & 34:01.0 & +42:09:04.4 & 34.09 & 9.89 & 4315.56 & 1.62 & -0.50 & 0.10 & 0.43 & 1.02 & 3.09 & 1.35 & 0.22 \\ \midrule
+			J220118.66+033558.6 & 01:18.7 & +03:35:58.6 & 35.11 & -108.23 & 4790.06 & 2.51 & -1.36 & 0.33 & 0.37 & 1.51 & 0.03 & 1.38 & 0.16 \\ \midrule
+			J060021.29+384840.6 & 00:21.3 & +38:48:40.6 & 30.03 & 32.68 & 4305.08 & 2.10 & 0.15 & -0.01 & 0.54 & 1.48 & 0.29 & 1.51 & 0.04 \\ \midrule
+			J025225.88+324308.1 & 52:25.9 & +32:43:08.2 & 34.79 & 24.88 & 4797.58 & 2.52 & -0.23 & 0.05 & 0.24 & 1.32 & 0.16 & 1.31 & 0.14 \\ \midrule
+			J163116.81+002349.5 & 31:16.8 & +00:23:49.5 & 32.63 & -35.98 & 4628.92 & 2.53 & 0.01 & 0.18 & 0.29 & 1.37 & 0.25 & 1.51 & 0.03 \\ \midrule
+			J153333.12+510621.8 & 33:33.1 & +51:06:21.9 & 49.45 & -17.99 & 4861.78 & 2.51 & -0.49 & 0.22 & 0.46 & 1.33 & 0.16 & 1.29 & 0.12 \\ \midrule
+			J075116.55+220137.8 & 51:16.6 & +22:01:37.9 & 32.87 & 90.24 & 4810.60 & 2.70 & -0.33 & 0.02 & 0.30 & 1.38 & 0.18 & 1.32 & 0.15 \\ \midrule
+			J003929.43+430039.5 & 39:29.4 & +43:00:39.6 & 33.14 & -104.33 & 4190.26 & 1.87 & -0.01 & 0.07 & 0.41 & 1.37 & 0.19 & 1.33 & 0.19 \\ \midrule
+			J071206.83+213038.0 & 12:06.8 & +21:30:38.1 & 32.66 & 29.08 & 4432.03 & 1.75 & -0.38 & 0.11 & 0.40 & 1.51 & 0.03 & 1.43 & 0.19 \\ \midrule
+			J222820.22+340750.3 & 28:20.2 & +34:07:50.3 & 34.52 & -45.27 & 4419.96 & 2.06 & -0.07 & 0.11 & 0.49 & 1.36 & 0.17 & 1.38 & 0.17 \\ \midrule
+			J222310.49+344357.4 & 23:10.5 & +34:43:57.5 & 54.06 & -20.09 & 4232.66 & 1.87 & -0.01 & 0.03 & 0.86 & 1.27 & 0.09 & 1.18 & 0.21 \\ \midrule
+			J222101.61+365923.6 & 21:01.6 & +36:59:23.7 & 30.81 & -27.88 & 4360.28 & 2.23 & 0.20 & 0.04 & 0.45 & 1.51 & 0.03 & 1.42 & 0.21 \\ \midrule
+			J074102.63+130520.3 & 41:02.6 & +13:05:20.4 & 40.83 & 49.17 & 5000.84 & 3.00 & -0.38 & -0.02 & 0.30 & 1.27 & 0.15 & 1.42 & 0.12 \\ \midrule
+			J061559.10+470344.9 & 15:59.1 & +47:03:44.9 & 36.84 & -18.29 & 4811.98 & 2.82 & -0.59 & 0.07 & 0.44 & 0.63 & 1.30 & 1.37 & 0.13 \\ \midrule
+			J054704.12+600827.1 & 47:04.1 & +60:08:27.1 & 33.19 & -23.33 & 4770.80 & 2.64 & -0.10 & 0.06 & 0.40 & 1.51 & 0.03 & 1.40 & 0.16 \\ \midrule
+			J042723.73+271546.8 & 27:23.7 & +27:15:46.9 & 45.73 & -40.17 & 4211.91 & 1.72 & -0.04 & 0.05 & 0.79 & 1.36 & 0.20 & 1.30 & 0.18 \\ \midrule
+			J035702.05+281335.2 & 57:02.1 & +28:13:35.3 & 31.82 & -44.67 & 4712.89 & 2.44 & 0.01 & 0.16 & 0.46 & 1.35 & 0.14 & 1.22 & 0.29 \\ \midrule
+			J091256.32+353008.3 & 12:56.3 & +35:30:08.3 & 73.39 & 20.39 & 4441.95 & 2.33 & 0.41 & 0.02 & 0.76 & 0.61 & 0.30 & 1.24 & 0.14 \\ \midrule
+			J071534.00+211353.8 & 15:34.0 & +21:13:53.9 & 31.68 & 42.27 & 4892.00 & 2.57 & -0.72 & 0.11 & 0.34 & -0.20 & 0.00 & 1.38 & 0.21 \\ \midrule
+			J101317.14+122928.8 & 13:17.1 & +12:29:28.8 & 45.54 & 300.69 & 5055.95 & 2.24 & -1.34 & 0.33 & 0.38 & 1.51 & 0.03 & 1.41 & 0.14 \\ \midrule
+			J161326.00+073218.1 & 13:26.0 & +07:32:18.2 & 48.45 & -50.07 & 5086.79 & 3.40 & -0.68 & 0.29 & 0.93 & 1.44 & 0.11 & 1.32 & 0.08 \\ \midrule
+			J173711.85+101126.6 & 37:11.9 & +10:11:26.7 & 30.01 & -33.58 & 4991.07 & 3.49 & -0.05 & 0.17 & 0.41 & 1.40 & 0.15 & 1.50 & 0.13 \\ \bottomrule
+		\end{tabular}%
+	}
+	\caption{My caption}
+	\label{my-label}
+\end{table}
+
 % Don't change these lines
 %\bsp	% typesetting comment
 \label{lastpage}
 \end{document}
+
+
+
