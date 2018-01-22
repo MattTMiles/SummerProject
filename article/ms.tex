@@ -14,8 +14,11 @@
 \usepackage{float}
 
 \usepackage{graphicx}	% Including figure files
+\usepackage{color}
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -70,19 +73,29 @@ keyword1 -- keyword2 -- keyword3
 
 \section{Introduction}
 
-Heavy elements (those with an atomic number greater than 30) must be synthesized using the slow (s) and rapid (r) neutron capture processes (\cite{Sneden2008}). The creation and abundance of these elements has been a key area in astrophysics research, and has been discussed and debated ever since the idea was first introduced in 1957 (\cite{Burbidge1957}). 
+Heavy elements ($Z > 30$) are synthesised through the slow (s) and rapid (r) neutron capture processes (\cite{Sneden2008}). The creation and abundance of these elements has been a key area in astrophysics research, and has been discussed and debated ever since the idea was first introduced in 1957 (\cite{Burbidge1957}). 
 
-Since it was first hypothesised 61 years ago, theorists have argued about the potential sites of the r-process. The r-process occurs under very specific circumstances, where the neutron density is high enough that the rate of neutron capture will occur faster than the rate at which the element undergoes a $\beta$-decay. The sites at which this phenomena can occur are very specific, with the most favoured being core-collapse supernovae which could enrich gas clouds that later could lead to enriched star formation. Or alternatively, where r-process elements are in a much higher abundance, Neutron Star Mergers or magnetorotationally driven supernovae, as is theorised to have happened in the case of the highly r-process enhanced ultra-faint dwarf (UFD) galaxy Reticulum II (\cite{Ji2016}). Neutron star mergers may have a stronger argument to be the parent sight of such a large amount of material being injected to a particular area, as is observed from Reticulum II. However, magnetorotationally driven supernovae are another possible solution. While they may not produce as much r-process material (although still more than core-collapse supernovae), they occur more frequently.
+Since it was first hypothesised 61 years ago, theorists have argued about the potential sites of the r-process. The r-process occurs under very specific circumstances, where the neutron density is high enough that the rate of neutron capture will occur faster than the rate at which the element undergoes a $\beta$-decay. The sites at which this phenomena can occur are very specific, with the most favoured being core-collapse supernovae which could enrich gas clouds that later could lead to enriched star formation. Or alternatively, where r-process elements are in a much higher abundance, Neutron Star Mergers or magnetorotationally driven supernovae, as is theorised to have happened in the case of the highly r-process enhanced ultra-faint dwarf (UFD) galaxy Reticulum II (\cite{Ji2016}). Neutron star mergers may have a stronger argument to be the parent site of such a large amount of material being injected to a particular area, as is observed from Reticulum II. However, magnetorotationally driven supernovae are another possible solution. 
+% While which may not produce much material? Be specific!
+% Also: it is almost impossible for us to distinguish an abundance signature as coming from a NS merger compared to a MRDSN, so normally they are thrown into the same bucket when discussing them. Keep that of mind.
+While they may not produce as much r-process material (although still more than core-collapse supernovae), they occur more frequently.
 
-In the particular case of Europium (atomic number 63), almost all is produced through the r-process [citation needed]. The recent discovery of the UFD Reticulum II has sparked discussion about the origin of r-process elements. Historically UFD's have had some of the lowest abundance of r-process elements of any celestial body, however analysis of several of Reticulum II's stars show they are greatly enriched, to the factor of 2-3 orders of magnitude higher than stars found in any other UFD (\cite{Ji2016}). This measure of enrichment lends evidence to the theory that a single rare event must have occurred in the galaxies formative years to enrich it, as (for Europium especially) the heavy element yields are found to be 1000 times higher than would be achieved from core-collapse supernovae ejecta. As the idea that 1000 supernovae could have contributed to Reticulum II is extremely improbable, then the fact that Reticulum II is so heavily enriched is evidence that at least some r-process material must be produced by a rare astrophysical event such as a neutron star-neutron star merger, or a magnetorotationally driven supernovae.
+In the particular case of Europium (atomic number 63), is almost entirely produced through the r-process [citation needed]. The recent discovery of the UFD Reticulum II has sparked discussion about the origin of r-process elements.
+% The above statement is not entirely true: there has been constant discussion about the r-process origin, but the discovery of Reticulum II marked a very interesting case where: (i) lots of r-process material was found and (ii) the environment meant that CCSN could be entirely excluded.
+ Historically UFD's have had some of the lowest abundance of r-process elements of any celestial body, however analysis of several of Reticulum II's stars show they are greatly enriched, to the factor of 2-3 orders of magnitude higher than stars found in any other UFD (\cite{Ji2016}). This measure of enrichment lends evidence to the theory that a single rare event must have occurred in the galaxies formative years to enrich it, as (for Europium especially) the heavy element yields are found to be 1000 times higher than would be achieved from core-collapse supernovae ejecta. As the idea that 1000 supernovae could have contributed to Reticulum II is extremely improbable, then the fact that Reticulum II is so heavily enriched is evidence that at least some r-process material must be produced by a rare astrophysical event such as a neutron star-neutron star merger, or a magnetorotationally driven supernovae.
 
 While neutron star mergers or magnetorotationally driven supernovae are likely to be the progenitors of much r-process material, that is not to say that all r-process material stems from these sources. Rather ithe rarity of these events might serve as an indication of the rarity of stars found to be heavily enhanced in these elements. What we then have to ask is can these rare events be responsible for all r-process stars found in the Milky Way, regardless of the relative strength of their abundance? And if not, can we then conclude that there must be multiple sites of r-process element creation throughout the Milky Way, that create these elements to different extents?
 
 To answer this question it is necessary to find and catalogue more r-process stars to find some relative fraction of enhanced stars that are either very enhanced, and so must come from a rare event. Or only slightly enhanced, and so they may come from a more common event that produces less material. However, r-process stars are unfortunately very rare, which makes finding this fraction difficult. For this reason we look to massive data sets, such as the LAMOST sky survey.
 \\\\
-The second data release from the LAMOST telescope catalogued $\approx$ 2.2 million spectra (low resolution) of stars in the Northern sky. Of these 2.2 million, 454,180 giants were fit against a normalised spectra from a sample of 9952 giants by Anna Ho (\cite{AnnaHo2017}), and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. 
+The second data release from the LAMOST telescope catalogued $\approx$ 2.2 million spectra (low resolution) of stars in the northern sky. Of these 2.2 million, 454,180 giants were fit against a normalised spectra from a sample of 9952 giants by Anna Ho (\cite{AnnaHo2017}), and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. 
 
-In this letter we report the probable discovery of 22 of these LAMOST giants that show enhanced r-process peaks for Europium at both 4129 and 4205 Angstroms. The giants belong to a broad range of both metallicity and temperature, and don't cluster or trend towards any particular place in the observed sky. These characteristics and seeming lack-of a trend could argue that there must be multiple sights of the r-process. While rare events such as neutron star mergers may create r-process elements in a very high abundance in localised areas, it is improbable to assume that these rare events occur commonly enough across the observed sky to explain what we see here. We suggest instead that there exists another r-process site that is acting alongside neutron star mergers that is far more common, but produces far less r-process material, such as core-collapse supernovae.
+% 22 or 48? We report on 48, where 22 are more likely.
+In this letter we report the probable discovery of 22 of these LAMOST giants that show enhanced r-process peaks for Europium at both 4129 and 4205 Angstroms.
+\todo{In Section X we do blah,...}
+
+% Move this to discussion!
+% The giants belong to a broad range of both metallicity and temperature, and don't cluster or trend towards any particular place in the observed sky. These characteristics and seeming lack-of a trend could argue that there must be multiple sights of the r-process. While rare events such as neutron star mergers may create r-process elements in a very high abundance in localised areas, it is improbable to assume that these rare events occur commonly enough across the observed sky to explain what we see here. We suggest instead that there exists another r-process site that is acting alongside neutron star mergers that is far more common, but produces far less r-process material, such as core-collapse supernovae.
 
 
 \begin{figure}
@@ -92,16 +105,16 @@ In this letter we report the probable discovery of 22 of these LAMOST giants tha
 \end{figure}
 
 
-\section{Methods, Observations, Simulations etc.}
-Normally the next section describes the techniques the authors used.
-It is frequently split into subsections, such as Section~\ref{sec:maths} below.
+\section{Methods}
 
-\subsection{Observations and Target Selection}
-The LAMOST survey is a low resolution ($R\approx1800$) optical survey that took spectra of stars between (3650-9000 \AA). The LAMOST Data-Release 2 (DR2) collected spectra in this band for $\approx$ 2.2 million stars. Anna Ho describes in her 2017 paper (\cite{AnnaHo2017}) how she used a machine learning method named \textit{The Cannon}. \textit{The Cannon} fit a predictive model using 9952 LAMOST stars that were also found in the higher resolution ($R\approx22500$) APOGEE survey. From this Ho was able to fit normalised spectra to 454180 giants from the LAMOST survey and was restricted to between 3905 and 9000 \AA.
+\subsection{Observations and Candidate Selection}
+The LAMOST survey is a low resolution ($R\approx1800$) optical survey that took spectra of stars between (3650-9000 \AA). The LAMOST Data-Release 2 (DR2) collected spectra in this band for $\approx$ 2.2 million stars. Anna Ho describes in her 2017 paper (\cite{AnnaHo2017}) how she used a machine learning method named \textit{The Cannon}. \textit{The Cannon} fit a predictive model using 9952 LAMOST stars that were also found in the higher resolution ($R\approx22500$) APOGEE survey. From this Ho was able to fit normalised spectra to 454,180 giants from the LAMOST survey and was restricted to between 3905\,\AA\ and 9000\,\AA.
+% What labels did Anna Ho predict? What's the typical precision of those labels?
 
+% Located? Selected?
 We located potential candidate stars with an abundance of Europium by searching for deviations from the normalized spectra supplied by \textit{The Cannon}. A negative deviation implied an enhancement in a particular element while a positive deviation implied a depletion (compared to what the model expected). 
 
-At the two main absorption lines for Europium (4129 and 4205 \AA) we fitted Gaussian profiles to each star in the 454180 giants from LAMOST DR2, and we recorded the amplitude and the wavelength of each, as well as their corresponding errors. The relevant stars were then found by meeting a specific set of criteria: 
+At the two main absorption lines for Europium (4129\,\AA\ and 4205\,\AA) we fitted Gaussian profiles to each star in the 454,180 giants from LAMOST DR2, and we recorded the amplitude and the wavelength of each, as well as their corresponding errors. Candidate Eu-enhanced stars were identified by stars that met the following criteria:
 
 \begin{itemize}
 	\item The amplitude of their deviation from the model needed to be less than -0.05 (remembering that a negative deviation corresponds to an enhancement in the element);
@@ -112,29 +125,10 @@ At the two main absorption lines for Europium (4129 and 4205 \AA) we fitted Gaus
 \end{itemize}   
 
 This left us with an initial sample of 48 candidates out of the 454180 LAMOST giant sample. They were then visually scrutinised to find any that were clear outliers and did not belong in the sample. After this process we were left with 22 potentially r-process enhanced candidates.
+% The above statement isn't true is it? Didn't you have >>48 candidates that you culled to 48, and then 22 stars looked really good by comparison?
 
 
-\subsection{Maths}
-\label{sec:maths} 
 
-Simple mathematics can be inserted into the flow of the text e.g. $2\times3=6$
-or $v=220$\,km\,s$^{-1}$, but more complicated expressions should be entered
-as a numbered equation:
-
-\begin{equation}
-    x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
-	\label{eq:quadratic}
-\end{equation}
-
-Refer back to them as e.g. equation~(\ref{eq:quadratic}).
-
-\subsection{Figures and tables}
-
-Figures and tables should be placed at logical positions in the text. Don't
-worry about the exact layout, which will be handled by the publishers.
-
-Figures are referred to as e.g. Fig.~\ref{fig:example_figure}, and tables as
-e.g. Table~\ref{tab:example_table}.
 
 \begin{figure}
 	\includegraphics[width=\columnwidth]{RA_v_dec_radial_velocity}
@@ -142,41 +136,20 @@ e.g. Table~\ref{tab:example_table}.
 	\label{fig:radec_Eucands}
 \end{figure}
 
+\section{Discussion}
 
-
-\begin{figure}
-	% To include a figure from a file named example.*
-	% Allowable file formats are eps or ps if compiling using latex
-	% or pdf, png, jpg if compiling using pdflatex
-	\includegraphics[width=\columnwidth]{example}
-    \caption{This is an example figure. Captions appear below each figure.
-	Give enough detail for the reader to understand what they're looking at,
-	but leave detailed discussion to the main body of the text.}
-    \label{fig:example_figure}
-\end{figure}
-
-
-\begin{table}
-	\centering
-	\caption{This is an example table. Captions appear above each table.
-	Remember to define the quantities, symbols and units used.}
-	\label{tab:example_table}
-	\begin{tabular}{lccr} % four columns, alignment for each
-		\hline
-		A & B & C & D\\
-		\hline
-		1 & 2 & 3 & 4\\
-		2 & 4 & 6 & 8\\
-		3 & 5 & 7 & 9\\
-		\hline
-	\end{tabular}
-\end{table}
-
+\begin{itemize}
+\item Your discussion points! 
+\end{itemize}
 
 \section{Conclusions}
 
-The last numbered section should briefly summarise what has been done, and describe
-the final conclusions which the authors draw from their work.
+\begin{itemize}
+\item Largest sample of r-process stars discovered to date
+\item Found at all metallicities (not just metal-poor stars), found at all temperatures/logg values so not something that is particularly biased in one part of the H-R diagram  (indicating we are probably not strongly biased to/against a particular kind of star)
+\item Found in the disk/halo all across the sky
+\item Orbits necessary for distinguishing origin. Encourage high-resolution follow-up and orbit analysis after Gaia DR2+
+\end{itemize}
 
 \section*{Acknowledgements}
 
