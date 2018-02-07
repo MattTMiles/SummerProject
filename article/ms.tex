@@ -108,9 +108,17 @@ Magnetorotationally driven supernovae may not produce as much r-process material
 	
 	\subsection{Observations and Candidate Selection}
 	
-	The LAMOST survey is a low resolution ($R\approx1800$) optical survey that took spectra of stars between 3650-9000 \AA. The second data release from the LAMOST telescope catalogued $\approx$ 2.2 million spectra (low resolution) of stars in the northern sky. Of these 2.2 million, 454,180 giants were fit against a normalised spectra from a sample of 9952 giants \citep{AnnaHo2017}, and from this it became possible to analyse which giants showed an abundance or depletion of particular heavy elements. A machine learning code \textit{The Cannon} was used to fit a predictive model using 9952 LAMOST giant stars that were also found in the higher resolution ($R\approx22500$) APOGEE survey. The labels \textit{The Cannon} predicted were $T_{\rm{eff}}$, $\rm{log_{10}[g]}$, $\rm{[Fe/H]}$, and $\rm{[\alpha/Fe]}$. Normalised spectra was then fit to 454,180 giants from the LAMOST survey and was restricted to between 3905\,\AA\ and 9000\,\AA. For reference, typical uncertainties for these labels are $70\rm{K}$ for $T_{\rm{eff}}$, $0.1$ in $\rm{log_{10}[g]}$, 0.1 in $\rm{[Fe/H]}$, and 0.04 in $\rm{[\alpha/H]}$.
+	The LAMOST survey is a low resolution optical spectroscopic survey ($R\approx1800$; 3650-9000\,\AA). The second data release from  LAMOST \citep{lamost} contains about 2.2 million stellar spectra in the northern sky. Of these 2.2 million, 454,180 were identified as giant stars through a data-driven analysis known as \textit{The Cannon}. An overlap sample of 9,952 giant stars common to LAMOST and the higher-resolution ($R\approx22500$) APOGEE survey \citep{apogee} were used as a training set.
+	The stellar labels used by \textit{The Cannon} included $T_{\rm{eff}}$, $\log{g}$, $\rm{[Fe/H]}$, and $\rm{[\alpha/Fe]}$. For reference, typical uncertainties for these labels are about $70\rm{K}$ for $T_{\rm{eff}}$, $0.1$ in $\rm{log_{10}{g}}$, 0.1\,dex in $\rm{[Fe/H]}$, and 0.04\,dex in $\rm{[\alpha/Fe]}$.
 	
-	We selected potential candidate stars with an over-abundance of Europium by searching for deviations from the normalized spectra supplied by \textit{The Cannon}. A negative deviation implies an enhancement in a particular element while a positive deviation implies a depletion (compared to what the data-driven model predicted). 
+	We identified candidate r-process enhanced stars by searching for deviations surrounding between the pseudo-continuum-normalised flux and the best-fitting model spectrum surrounding  
+	
+	
+	
+	
+	 flux and the pseudo-continuum-normalised spectra 
+	
+	 with an over-abundance of Europium by searching for deviations from the normalized spectra supplied by \textit{The Cannon}. A negative deviation implies an enhancement in a particular element while a positive deviation implies a depletion (compared to what the data-driven model predicted). 
 	
 	At two absorption lines for Europium (4129\,\AA\ and 4205\,\AA) we fitted Gaussian profiles to each star in the 454,180 giants from LAMOST DR2, and we recorded the amplitude and the wavelength of each, as well as their corresponding errors. Candidate Europium enhanced stars were selected by identifying stars that met the following criteria:
 	
