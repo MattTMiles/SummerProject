@@ -7,7 +7,7 @@ Created on Wed Jan 24 14:38:17 2018
 
 import numpy as np
 import os
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import math
 
 from astropy import units as u
@@ -16,10 +16,10 @@ import astropy as asp
 
 
 
-MilkyWayVol = 4/3*math.pi*(15000*u.pc)**3 #radius of MW=15000 pc; Vol in pc^3
-N_MWstars = 250*10^(9) # Average number of stars in MW (+/- 150 billion error)
-N_MWgiants = 75300000
-LAMOSTstars = 454180
+MilkyWayVol = 4.0/3.0*math.pi*(15000.0*u.pc)**3 #radius of MW=15000 pc; Vol in pc^3
+N_MWstars = 250.0*10**9 # Average number of stars in MW (+/- 150 billion error)
+N_MWgiants = 75300000.0
+LAMOSTstars = 454180.0
 
 Ejecta = 1.989*10**(30)*10**(-4.5)*u.kg #Typical Eu Neutron Star Ejecta in kg from Ji's Paper
 
@@ -59,6 +59,7 @@ Euatom_mass = 2.5234214*10**(-25)*u.kg
 Eu_mass = Euatom_mass*N_Euatoms #Total mass of Eu in each enhanced star (assuming average of [Eu/Fe]=0.7)
 
 Eu60 = Eu_mass*61 #Total (average) mass of Eu in the 60 stars
+
 
 Eu_density = Eu60/ObsMW #kg*parsec^(-3)
 
