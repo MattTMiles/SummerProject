@@ -58,7 +58,7 @@ N_Euatoms = 10**(Eu_H - 12)*N_Hatoms
 Euatom_mass = 2.5234214*10**(-25)*u.kg
 Eu_mass = Euatom_mass*N_Euatoms #Total mass of Eu in each enhanced star (assuming average of [Eu/Fe]=0.7)
 
-Eu60 = Eu_mass*60 #Total (average) mass of Eu in the 60 stars
+Eu60 = Eu_mass*61 #Total (average) mass of Eu in the 60 stars
 
 Eu_density = Eu60/ObsMW #kg*parsec^(-3)
 
